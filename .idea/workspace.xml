@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bcd58212-35ba-4cbc-8e12-edd6307cde9d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/.idea/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +22,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Frontend" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -44,7 +44,7 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2qdAvai9DoAgwAU3Bprf7PPT6cb" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -207,11 +207,16 @@
       <workItem from="1734982332601" duration="36519000" />
       <workItem from="1735120108756" duration="22582000" />
       <workItem from="1738088780432" duration="686000" />
-      <workItem from="1738089491970" duration="1930000" />
+      <workItem from="1738089491970" duration="2439000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Frontend" />
+    </ignored-roots>
   </component>
 </project>

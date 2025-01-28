@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bcd58212-35ba-4cbc-8e12-edd6307cde9d" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/Frontend/src/app/components/ajouter-etudiant/ajouter-etudiant.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/angular.json" afterDir="false" />
@@ -208,6 +209,7 @@
       <workItem from="1734982332601" duration="36519000" />
       <workItem from="1735120108756" duration="22582000" />
       <workItem from="1738088780432" duration="686000" />
+      <workItem from="1738089491970" duration="366000" />
     </task>
     <servers />
   </component>

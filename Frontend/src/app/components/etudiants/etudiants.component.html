@@ -1,0 +1,57 @@
+
+<div class="container mt-5">
+  <h2>Liste des Étudiants</h2>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Date de naissance</th>
+      <th>Absences</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let etudiant of etudiants">
+      <td>{{ etudiant.id }}</td>
+      <td>{{ etudiant.nom }}</td>
+      <td>{{ etudiant.prenom }}</td>
+      <td>{{ etudiant.dateNaissance | date: 'yyyy-MM-dd' }}</td>
+      <td>
+        <ul>
+          <li *ngFor="let absence of etudiant.absences">
+            {{ absence.dateAbsence }} - {{ absence.motif }}
+          </li>
+        </ul>
+      </td>
+      <td>
+        <button class="btn btn-info" (click)="selectEtudiant(etudiant)">Modifier</button>
+        <button class="btn btn-danger" (click)="deleteEtudiant(etudiant.id)">Supprimer</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+
+  <div *ngIf="selectedEtudiant" class="form-container mt-4">
+    <h3>Modifier l'étudiant</h3>
+    <form (ngSubmit)="updateEtudiant()">
+      <label for="nom_edit">Nom:</label>
+      <input id="nom_edit" [(ngModel)]="selectedEtudiant.nom" name="nom" required>
+
+      <label for="prenom_edit">Prénom:</label>
+      <input id="prenom_edit" [(ngModel)]="selectedEtudiant.prenom" name="prenom" required>
+
+      <label for="dateNaissance_edit">Date de naissance:</label>
+      <input id="dateNaissance_edit" [(ngModel)]="selectedEtudiant.dateNaissance" name="dateNaissance" type="date" required>
+
+      <button type="submit" class="btn btn-primary">Mettre à jour</button>
+    </form>
+  </div>
+
+  <div class="mt-4">
+    <button class="btn btn-primary" [routerLink]="'/absences'">Voir les Absences</button>
+    <button class="btn btn-primary" [routerLink]="'/ajouter-etudiant'">Ajouter un Étudiant</button>
+  </div>
+</div>

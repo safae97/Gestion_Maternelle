@@ -1,0 +1,133 @@
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f4e3; /* Beige background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2, h3 {
+  text-align: center;
+  color: #7c4e2a; /* Light brown color */
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+/* Formulaire for editing a student */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Navigation buttons container */
+.mt-4 {
+  display: flex;
+  flex-direction: column;  /* Stack buttons vertically */
+  gap: 20px;  /* Space between buttons */
+  margin-top: 20px;
+}
+
+/* Buttons within the same level */
+.mt-4 .btn {
+  width: 100%;  /* Make buttons full-width */
+  padding: 12px 20px;
+  background-color: #7c4e2a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #5c3b1d; /* Darker brown on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+
+/* Input fields */
+input {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #bfa6a0; /* Light brown border */
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #7c4e2a; /* Light brown on focus */
+  background-color: #f1e3d3; /* Slight beige background */
+}
+
+/* Labels */
+label {
+  font-size: 16px;
+  color: #7c4e2a;
+  font-weight: bold;
+}
+
+/* Button */
+button {
+  padding: 12px 20px;
+  background-color: #7c4e2a; /* Light brown */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f1e3d3;
+  color: #7c4e2a;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}

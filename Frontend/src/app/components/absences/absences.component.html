@@ -1,0 +1,77 @@
+<h2>Gestion des Absences</h2>
+
+<div class="container">
+  <h2>Ajouter une Absence</h2>
+  <div class="container mt-5">
+    <div class="form-container">
+      <label for="etudiantId">ID Étudiant:</label>
+      <input
+        id="etudiantId"
+        type="number"
+        [(ngModel)]="newAbsence.etudiantId"
+        name="etudiantId"
+        placeholder="ID de l'étudiant"
+        required
+      />
+
+      <label for="enseignantId">ID Enseignant:</label>
+      <input
+        id="enseignantId"
+        type="number"
+        [(ngModel)]="newAbsence.enseignantId"
+        name="enseignantId"
+        placeholder="ID de l'enseignant"
+        required
+      />
+
+      <label for="dateAbsence">Date de l'absence:</label>
+      <input
+        id="dateAbsence"
+        type="date"
+        [(ngModel)]="newAbsence.dateAbsence"
+        name="dateAbsence"
+        required
+      />
+
+      <label for="motif">Motif de l'absence:</label>
+      <input
+        id="motif"
+        type="text"
+        [(ngModel)]="newAbsence.motif"
+        name="motif"
+        placeholder="Motif de l'absence"
+        required
+      />
+
+      <button (click)="addAbsence()">Ajouter Absence</button>
+    </div>
+  </div>
+
+
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Étudiant ID</th>
+      <th>Enseignant ID</th>
+      <th>Date</th>
+      <th>Motif</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let absence of absences">
+      <td>{{ absence.id }}</td>
+      <td>{{ absence.etudiantId || 'N/A' }}</td>
+      <td>{{ absence.enseignantId || 'N/A' }}</td>
+      <td>{{ absence.dateAbsence || 'N/A' }}</td>
+      <td>{{ absence.motif || 'N/A' }}</td>
+      <td>
+        <button (click)="deleteAbsence(absence.id)">Supprimer</button>
+      </td>
+    </tr>
+
+    </tbody>
+  </table>
+</div>
+

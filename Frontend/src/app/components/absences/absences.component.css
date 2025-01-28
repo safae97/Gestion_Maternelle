@@ -1,0 +1,128 @@
+/* Container */
+.container {
+  max-width: 600px;  /* Reduced max-width from 800px to 600px */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f4e3; /* Beige background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Title */
+h2 {
+  text-align: center;
+  color: #7c4e2a; /* Light brown color */
+  margin-bottom: 20px;
+}
+
+/* Form container */
+.form-container {
+  display: flex;
+  flex-direction: column; /* Stack fields vertically */
+  align-items: center; /* Center fields horizontally */
+  gap: 15px;
+  margin-bottom: 30px; /* Space between form and table */
+}
+
+/* Input fields */
+input {
+  padding: 10px;
+  border: 1px solid #bfa6a0; /* Light brown border */
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  width: 100%; /* Makes input fields take full width within the flex items */
+  max-width: 400px; /* Limits the width of input fields */
+}
+
+input:focus {
+  outline: none;
+  border-color: #7c4e2a; /* Light brown on focus */
+  background-color: #f1e3d3; /* Slight beige background */
+}
+
+/* Labels */
+label {
+  font-size: 16px;
+  color: #7c4e2a;
+  font-weight: bold;
+  display: block;
+  text-align: left; /* Align labels to the left */
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Button */
+button {
+  padding: 12px 20px;
+  background-color: #7c4e2a; /* Light brown */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 400px; /* Matches input fields */
+  width: 100%;
+}
+
+button:hover {
+  background-color: #5c3b1d; /* Darker brown on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #bfa6a0; /* Light brown border */
+}
+
+th {
+  background-color: #7c4e2a; /* Light brown background */
+  color: white;
+}
+
+td {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Actions button styling */
+button.btn-danger {
+  padding: 8px 12px;
+  background-color: #d9534f; /* Bootstrap red color */
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+
+button.btn-danger:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}

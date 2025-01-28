@@ -1,0 +1,31 @@
+<div class="container mt-5">
+  <h2>Ajouter un Étudiant</h2>
+  <div class="form-container">
+    <label for="nom_add">Nom:</label>
+    <input id="nom_add" [(ngModel)]="newEtudiant.nom" placeholder="Nom de l'étudiant" name="nom" required />
+
+    <label for="prenom_add">Prénom:</label>
+    <input id="prenom_add" [(ngModel)]="newEtudiant.prenom" placeholder="Prénom de l'étudiant" name="prenom" required />
+
+    <label for="dateNaissance_add">Date de naissance:</label>
+    <input
+      type="date"
+      id="dateNaissance_add"
+      [(ngModel)]="newEtudiant.dateNaissance"
+      name="dateNaissance"
+      required
+    />
+
+    <label for="enseignant_add">ID de l'enseignant:</label>
+    <input
+      type="number"
+      id="enseignant_add"
+      [(ngModel)]="newEtudiant.enseignantId"
+      placeholder="ID de l'enseignant"
+      name="enseignant"
+      required
+    />
+
+    <button (click)="addEtudiant()">Ajouter Étudiant</button>
+  </div>
+</div>

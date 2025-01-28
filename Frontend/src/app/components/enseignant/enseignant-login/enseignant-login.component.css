@@ -1,0 +1,76 @@
+/* Container */
+div {
+  max-width: 600px;
+  margin: 60px auto 0; /* Space above container */
+  padding: 10px;
+  background-color: #f8f4e3; /* Beige background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensure padding doesn't add to container size */
+}
+/* Heading */
+h2 {
+  text-align: center;
+  color: #7c4e2a; /* Light brown color */
+  margin-bottom: 20px;
+  margin-top: 0; /* Ensure no margin on top */
+}
+
+
+/* Form container */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields */
+input {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #bfa6a0; /* Light brown border */
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  box-sizing: border-box; /* Prevent padding from adding extra height */
+}
+
+/* Labels */
+label {
+  font-size: 16px;
+  color: #7c4e2a;
+  font-weight: bold;
+}
+
+/* Button */
+button {
+  padding: 12px 20px;
+  background-color: #7c4e2a; /* Light brown */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5c3b1d; /* Darker brown on hover */
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  div {
+    padding: 15px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
